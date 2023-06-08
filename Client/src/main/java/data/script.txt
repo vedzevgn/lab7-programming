@@ -1,0 +1,11 @@
+add
+name
+math_rock
+12.4
+22.4
+studio
+3
+show
+shuffle
+sort
+execute_script /Users/vedz.evgn/Documents/Программирование/lab6/Client/src/main/java/data/script.txt

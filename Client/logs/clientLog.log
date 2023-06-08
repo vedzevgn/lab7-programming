@@ -1,0 +1,5 @@
+2023-06-08 16:15:28,190 INFO Client [main] Клиент запущен.
+2023-06-08 16:15:28,214 INFO r.RequestBuilder [main] Создан запрос: ready.
+2023-06-08 16:15:28,292 INFO Client [main] Список команд получен.
+2023-06-08 16:15:43,723 INFO r.RequestBuilder [main] Создан запрос: help.
+2023-06-08 16:15:43,733 INFO l.ConsoleManager [main] Получен ответ.

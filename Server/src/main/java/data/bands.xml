@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MusicBands>
+	<MusicBand id="1" name="First" genre="MATH_ROCK" x="25.05" y="19.67" studio="Studio" number_of_participants="4" date="null" />
+	<MusicBand id="2" name="Second" genre="MATH_ROCK" x="27.04" y="19.77" studio="Studio" number_of_participants="4" date="null" />
+	<MusicBand id="3" name="Third" genre="MATH_ROCK" x="16.01" y="20.05" studio="Studio" number_of_participants="4" date="null" />
+	<MusicBand id="4" name="Бакс" genre="POST_ROCK" x="16.0" y="16.0" studio="Миска корма" number_of_participants="4" date="null" />
+	<MusicBand id="14" name="От Женьки" genre="POST_ROCK" x="12.0" y="12.0" studio="12" number_of_participants="4" date="null" />
+</MusicBands>

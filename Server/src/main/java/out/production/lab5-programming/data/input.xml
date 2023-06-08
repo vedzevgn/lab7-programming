@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MusicBands>
+	<MusicBand id="0" name="First" genre="MATH_ROCK" x="25.05" y="19.67" studio="Studio" number_of_participants="4" />
+	<MusicBand id="1" name="Second" genre="MATH_ROCK" x="27.04" y="19.77" studio="Studio" number_of_participants="4" />
+	<MusicBand id="2" name="Third" genre="MATH_ROCK" x="16.01" y="20.05" studio="Studio" number_of_participants="4" />
+</MusicBands>
