@@ -198,3 +198,17 @@
 2023-06-09 15:29:17,302 INFO Server [pool-3-thread-1] Получена команда: show.
 2023-06-09 15:29:17,302 INFO c.Invoker [pool-3-thread-1] Проверка команды.
 2023-06-09 15:29:17,324 INFO r.ResponseBuilder [pool-3-thread-1] Создан ответ.
+2023-06-09 15:40:36,707 INFO Server [main] Запуск сервера.
+2023-06-09 15:40:37,213 INFO c.Receiver [main] Receiver инициализорован.
+2023-06-09 15:40:37,233 INFO c.Invoker [main] Invoker инициализирован.
+2023-06-09 15:40:37,233 INFO Server [main] Invoker и Receiver запущены.
+2023-06-09 15:40:40,238 INFO Server [main] Список команд отправлен.
+2023-06-09 15:40:50,688 INFO Server [pool-3-thread-1] Получена команда: login vedzevgn 18381838.
+2023-06-09 15:40:50,689 INFO c.Invoker [pool-3-thread-1] Проверка команды.
+2023-06-09 15:40:50,689 INFO c.Invoker [pool-3-thread-1] Запуск выполнения команды.
+2023-06-09 15:40:50,698 INFO r.ResponseBuilder [pool-3-thread-1] Создан ответ.
+2023-06-09 15:40:50,703 INFO r.ResponseBuilder [pool-3-thread-1] Создан ответ.
+2023-06-09 17:14:39,546 INFO Server [pool-3-thread-2] Получена команда: show.
+2023-06-09 17:14:39,551 INFO c.Invoker [pool-3-thread-2] Проверка команды.
+2023-06-09 17:14:39,591 INFO c.Invoker [pool-3-thread-2] Запуск выполнения команды.
+2023-06-09 17:14:39,726 INFO r.ResponseBuilder [pool-3-thread-2] Создан ответ.

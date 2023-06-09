@@ -7,17 +7,17 @@ import static java.lang.Math.ceil;
 
 public class Splitter extends RecursiveTask<Packet[]> {
 
-    private byte[] byteArrayToSending;
+    private byte[] toSend;
 
-    public Splitter(byte[] aByteArrayToSending) {
-        byteArrayToSending = aByteArrayToSending;
+    public Splitter(byte[] inputArray) {
+        toSend = inputArray;
     }
 
     @Override
     protected Packet[] compute() {
         Packet[] packets;
-        int packagesAmount = (int) ceil((double) byteArrayToSending.length / (double) Packet.dataSize);
-        byte[] dataToSend = Arrays.copyOf(byteArrayToSending, Packet.dataSize * packagesAmount);
+        int packagesAmount = (int) ceil((double) toSend.length / (double) Packet.dataSize);
+        byte[] dataToSend = Arrays.copyOf(toSend, Packet.dataSize * packagesAmount);
 
         packets = new Packet[packagesAmount];
         for (int i = 0; i < packagesAmount; i++) {
@@ -27,7 +27,7 @@ public class Splitter extends RecursiveTask<Packet[]> {
         return packets;
     }
 
-    public byte[] getByteArrayToSending() {
-        return byteArrayToSending;
+    public byte[] getToSend() {
+        return toSend;
     }
 }

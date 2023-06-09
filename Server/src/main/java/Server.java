@@ -46,8 +46,8 @@ public class Server {
 
     private static final Logger logger = LogManager.getLogger();
 
-    String DBusername;
-    String DBpassword;
+    String DBUsername;
+    String DBPassword;
     String URLTail;
 
     public Server(String[] args) throws IOException, InvalidArgsException {
@@ -57,19 +57,16 @@ public class Server {
         } else {
             this.dataPath = args[0];
         }
-        DBusername = args[0];
-        DBpassword = args[1];
+        DBUsername = args[0];
+        DBPassword = args[1];
         URLTail = args[2];
     }
 
     public void start() throws IOException, InvalidArgsException, ClassNotFoundException, SQLException, ExecutionException, InterruptedException {
         logger.info("Запуск сервера.");
         //System.out.println("𝘃𝗲𝗱𝘇𝗲𝘃𝗴𝗻\n𝘀𝗲𝗿𝘃𝗲𝗿 (𝗠𝘂𝘀𝗶𝗰𝗕𝗮𝗻𝗱 𝗰𝗼𝗹𝗹𝗲𝗰𝘁𝗶𝗼𝗻)\n");
-        //String DBusername = "s372796";
-        //String DBpassword = "88mshzLHxcleudyI";
-        //String URLTail = "studs";
 
-        DBSettings settings = new DBSettings(DBusername, DBpassword, URLTail);
+        DBSettings settings = new DBSettings(DBUsername, DBPassword, URLTail);
 
         DBConnection dbConnection;
 

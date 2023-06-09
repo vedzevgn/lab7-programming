@@ -95,3 +95,10 @@
 2023-06-09 15:29:15,674 INFO Client [main] Список команд получен.
 2023-06-09 15:29:17,298 INFO r.RequestBuilder [main] Создан запрос: show.
 2023-06-09 15:29:17,329 INFO l.ConsoleManager [main] Получен ответ.
+2023-06-09 15:40:40,167 INFO Client [main] Клиент запущен.
+2023-06-09 15:40:40,177 INFO r.RequestBuilder [main] Создан запрос: ready.
+2023-06-09 15:40:40,249 INFO Client [main] Список команд получен.
+2023-06-09 15:40:50,684 INFO r.RequestBuilder [main] Создан запрос: login vedzevgn 18381838.
+2023-06-09 15:40:50,705 INFO l.ConsoleManager [main] Получен ответ.
+2023-06-09 17:14:39,487 INFO r.RequestBuilder [main] Создан запрос: show.
+2023-06-09 17:14:39,734 INFO l.ConsoleManager [main] Получен ответ.
