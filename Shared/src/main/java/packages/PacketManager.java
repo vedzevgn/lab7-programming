@@ -2,10 +2,14 @@ package packages;
 
 import java.io.*;
 import java.util.Arrays;
+import java.util.concurrent.ForkJoinTask;
+import java.util.concurrent.RecursiveTask;
 
 import static java.lang.Math.*;
 
-public class PacketManager {
+public class PacketManager extends RecursiveTask<Packet[]> {
+
+    public byte[] toSend;
 
     public static Packet[] splitObject(Serializable object) {
         Packet[] packets;
@@ -70,5 +74,24 @@ public class PacketManager {
         }
 
         return deserialize(byteObject);
+    }
+
+    public static byte[] objectToBytes(Serializable object) {
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        ObjectOutputStream objectOutputStream;
+        byte[] data = new byte[0];
+        try {
+            objectOutputStream = new ObjectOutputStream(byteArrayOutputStream);
+            objectOutputStream.writeObject(object);
+            data = byteArrayOutputStream.toByteArray();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return data;
+    }
+
+    @Override
+    protected Packet[] compute() {
+        return null;
     }
 }

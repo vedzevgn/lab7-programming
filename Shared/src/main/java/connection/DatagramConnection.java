@@ -2,12 +2,16 @@ package connection;
 
 import packages.Packet;
 import packages.PacketManager;
+import packages.Splitter;
 import responces.Response;
 
 import java.io.*;
 import java.net.*;
+import java.util.concurrent.ForkJoinPool;
 
 public class DatagramConnection implements Connection {
+
+    ForkJoinPool forkJoinPool = new ForkJoinPool();
     public static final int STANDARD_PORT = 1616;
 
     public static final int packageSize = Packet.packageSize;
@@ -72,7 +76,10 @@ public class DatagramConnection implements Connection {
     public void send(Serializable object) {
         try {
             if (clientPort != null || clientHost != null) {
-                Packet[] packets = PacketManager.splitObject(object);
+                Splitter splitter = new Splitter(PacketManager.objectToBytes(object));
+                ForkJoinPool forkJoinPool = new ForkJoinPool();
+                Packet[] packets = forkJoinPool.invoke(splitter);
+
                 for (Packet packet : packets) {
                     DatagramPacket datagramPacket = new DatagramPacket(PacketManager.serialize(packet), packageSize, clientHost, clientPort);
                     socket.send(datagramPacket);
