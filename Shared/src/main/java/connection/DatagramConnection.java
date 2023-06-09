@@ -8,7 +8,7 @@ import java.io.*;
 import java.net.*;
 
 public class DatagramConnection implements Connection {
-    public static final int STANDARD_PORT = 8787;
+    public static final int STANDARD_PORT = 1616;
 
     public static final int packageSize = Packet.packageSize;
 

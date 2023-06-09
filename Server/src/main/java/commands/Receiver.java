@@ -141,15 +141,16 @@ public class Receiver {
         try {
             if (Command.isCorrectArgs(args, arguments)) {
                 ClearOperations operations = new ClearOperations();
-                //System.out.println("Вы уверены, что хотите очистить коллекцию? Данное действие необратимо. (y/n)");
                 manager.send(builder.createResponse("Вы уверены, что хотите очистить коллекцию (будут удалены только ваши объекты)? Данное действие необратимо. (y/n)", true, true));
                 if (operations.confirm(parser.getText((Request) manager.receive()))) {
+                    reentrantLockOnWrite.lock();
                     dbManager.removeBandsOfUser(ID);
                     for(int i = 0; i < list.size(); i++){
                         if(Objects.equals(list.get(i).getUserID(), ID)){
                             list.remove(i);
                         }
                     }
+                    reentrantLockOnWrite.unlock();
                 }
             }
         } catch (InvalidArgsException e) {
@@ -330,11 +331,11 @@ public class Receiver {
                 if (band.isPresent()) {
                     if(Objects.equals(ID, band.get().getUserID())) {
                         manager.send(builder.createResponse("Вы уверены, что хотите удалить элемент? Данное действие необратимо. (y/n)", true, true));
-                        if (new RemoveOperations().confirm(parser.getText((Request) manager.receive()))) {
+                        Request request = (Request) manager.receive();
+                        if (new RemoveOperations().confirm(parser.getText(request))) {
                             reentrantLockOnWrite.lock();
                             dbManager.removeBand(band.get().getId());
                             reentrantLockOnWrite.unlock();
-
                             list.remove(band.get());
                             manager.send(builder.createResponse("Из коллекции удалён объект с ID: " + id, false, true));
                         }
@@ -439,6 +440,7 @@ public class Receiver {
     public void showCommand(String[] arguments, String path, boolean isScript, Object object) {
         try {
             if (Command.isCorrectArgs(new String[0], arguments)) {
+                reentrantLockOnRead.lock();
                 if (list.isEmpty()) {
                     //System.out.println("Коллекция пуста.");
                     manager.send(builder.createResponse("Коллекция пуста.", false, true));
@@ -449,6 +451,7 @@ public class Receiver {
                     //System.out.println(fullList);
                     manager.send(builder.createResponse(fullList, false, true));
                 }
+                reentrantLockOnRead.unlock();
             }
         } catch (InvalidArgsException | IOException e) {
             System.out.println("Ошибка: " + e.getMessage());
@@ -473,6 +476,7 @@ public class Receiver {
         String[] args = new String[0];
         try {
             if (Command.isCorrectArgs(args, arguments)) {
+                reentrantLockOnRead.lock();
                 for (int k = 0; k < list.size(); k++) {
                     if (k < list.size() - 1) {
                         if (list.get(k + 1).getId() < list.get(k).getId()) {
@@ -480,7 +484,7 @@ public class Receiver {
                         }
                     }
                 }
-
+                reentrantLockOnRead.unlock();
                 //System.out.println("Коллекция отсортирована по ID.");
                 manager.send(builder.createResponse("Коллекция отсортирована по ID.", false, true));
             }
@@ -532,6 +536,8 @@ public class Receiver {
                 MusicBand newBand = (MusicBand) parser.getObject((Request) manager.receive());
                 //System.out.println("Принят объект: " + newBand.getName());
                 logger.info("Принят объект: " + newBand.getName() + ".");
+
+                reentrantLockOnWrite.lock();
                 if(dbManager.updateBand(newBand, id, ID)) {
                     newBand.setId(id);
                     list.set(list.indexOf(band.get()), newBand);
@@ -539,6 +545,8 @@ public class Receiver {
                 } else {
                     manager.send(builder.createResponse("Объект с указанным ID не существует.", false, true));
                 }
+                reentrantLockOnWrite.unlock();
+
             } else {
                 manager.send(builder.createResponse("Вы не можете модифицировать объекты, созданные другими пользователями.", false, true));
             }
@@ -546,6 +554,8 @@ public class Receiver {
             MusicBand newBand = (MusicBand) parser.getObject((Request) manager.receive());
             //System.out.println("Принят объект: " + newBand.getName());
             logger.info("Принят объект: " + newBand.getName() + ".");
+
+            reentrantLockOnWrite.lock();
             if(dbManager.updateBand(newBand, id, ID)) {
                 newBand.setId(id);
                 list.set(list.indexOf(band.get()), newBand);
@@ -553,6 +563,8 @@ public class Receiver {
             } else {
                 manager.send(builder.createResponse("Объект с указанным ID не существует.", false, true));
             }
+            reentrantLockOnWrite.unlock();
+
         } else {
             //System.out.println("Максимальный ID: " + (list.size()-1) + ". Минимальный ID: 0.");
             manager.send(builder.createResponse("Не существует элемента с заданным ID.", false, true));

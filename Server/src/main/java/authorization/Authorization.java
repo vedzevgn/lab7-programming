@@ -56,22 +56,6 @@ public class Authorization {
         }
     }
 
-    /*public LoginState login(String user, String password) {
-        byte[] passwordHash = getPasswordHash(getSalt(user), password);
-
-        try {
-            PreparedStatement loggingStatement = connection.prepareStatement(checkLoginInfo);
-            loggingStatement.setString(1, user);
-            loggingStatement.setBytes(2, passwordHash);
-            ResultSet isLoginSuccessfully = loggingStatement.executeQuery();
-            System.out.println("Вход выполнен");
-            return isLoginSuccessfully.next() ? LoginState.SUCCESS : LoginState.INVALID_PASSWORD;
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return LoginState.ERROR;
-        }
-    }*/
-
     private byte[] getSalt(String user) throws SQLException{
             PreparedStatement saltStatement = connection.prepareStatement(getSalt);
             saltStatement.setString(1, user);

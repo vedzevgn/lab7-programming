@@ -9,8 +9,6 @@ import parameters.Studio;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.time.LocalDate;
-import java.time.OffsetDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
@@ -27,7 +25,7 @@ public class DBCollectionLoader {
         ArrayList<MusicBand> list = new ArrayList<MusicBand>();
 
         try(Statement statement = connection.getDBConnection().createStatement()) {
-            ResultSet set = statement.executeQuery(initialization);
+            ResultSet set = statement.executeQuery(start);
             while (set.next()) {
                 MusicBand band = new MusicBand();
                 band.setId(set.getLong("band_id"));

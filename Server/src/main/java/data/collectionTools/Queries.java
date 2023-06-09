@@ -1,7 +1,7 @@
 package data.collectionTools;
 
 public class Queries {
-    public static final String initialization = """
+    public static final String start = """
                         SELECT b.band_id, b.band_name, b.genre, b.x_coordinate, b.y_coordinate, b.studio_name, b.nop, b.creation_date, b.user_id
                         FROM bands b
                         ORDER BY b.band_id;

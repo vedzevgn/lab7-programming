@@ -7,7 +7,7 @@
         <Console name="STDOUT">
             <Layout type="PatternLayout" pattern="%m %n" />
         </Console>
-        <RollingFile name="rollingFile"
+        <RollingFile name="RollingFile"
                      fileName="logs/serverLog.log"
                      filePattern="logs/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">
             <PatternLayout>
@@ -24,7 +24,7 @@
     <Loggers>
         <Root level="INFO">
             <AppenderRef ref="STDOUT" />
-            <AppenderRef ref="rollingFile" />
+            <AppenderRef ref="RollingFile" />
         </Root>
     </Loggers>
 

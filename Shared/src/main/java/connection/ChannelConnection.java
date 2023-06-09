@@ -11,9 +11,9 @@ import java.nio.channels.DatagramChannel;
 import java.util.Arrays;
 
 public class ChannelConnection implements Connection{
-    private static final long CONNECTION_TIMEOUT = 120000;
+    private static final long CONNECTION_TIMEOUT = 10000;
 
-    public static final int STANDARD_PORT = 8787;
+    public static final int STANDARD_PORT = 1616;
 
     public static final int PACKAGE_SIZE = Packet.packageSize;
 

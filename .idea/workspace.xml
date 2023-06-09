@@ -32,6 +32,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -92,7 +95,7 @@
     <configuration name="server" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Server" />
-      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/Server/src/main/java/data/bands.xml" />
+      <option name="PROGRAM_PARAMETERS" value="postgres 18381838 postgres" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -121,7 +124,7 @@
       <workItem from="1685828702018" duration="13079000" />
       <workItem from="1685911464730" duration="18263000" />
       <workItem from="1685978143336" duration="8423000" />
-      <workItem from="1686061137462" duration="19909000" />
+      <workItem from="1686061137462" duration="29497000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1684521332952</created>
@@ -190,7 +193,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Server/src/main/java/authorization/Authorization.java</url>
-          <line>143</line>
+          <line>127</line>
           <properties class="authorization.Authorization" method="signUp">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -198,13 +201,22 @@
           <option name="timeStamp" value="589" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/Server/src/main/java/commands/Receiver.java</url>
-          <line>137</line>
-          <properties class="commands.Receiver" method="clearCommand">
+          <url>file://$PROJECT_DIR$/Client/src/main/java/tools/CommandChecker.java</url>
+          <line>106</line>
+          <properties class="tools.CommandChecker" method="isCorrect">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="660" />
+          <option name="timeStamp" value="690" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Server/src/main/java/commands/Receiver.java</url>
+          <line>323</line>
+          <properties class="commands.Receiver" method="removeByIdCommand">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="706" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Client/src/main/java/tools/ConsoleTools.java</url>
@@ -683,92 +695,92 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/authorization/Authorization.java</url>
-          <line>144</line>
+          <line>128</line>
           <option name="timeStamp" value="590" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/authorization/Authorization.java</url>
-          <line>145</line>
+          <line>129</line>
           <option name="timeStamp" value="591" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/authorization/Authorization.java</url>
-          <line>146</line>
+          <line>130</line>
           <option name="timeStamp" value="593" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/authorization/Authorization.java</url>
-          <line>148</line>
+          <line>132</line>
           <option name="timeStamp" value="594" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/authorization/Authorization.java</url>
-          <line>150</line>
+          <line>134</line>
           <option name="timeStamp" value="596" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/authorization/Authorization.java</url>
-          <line>149</line>
+          <line>133</line>
           <option name="timeStamp" value="597" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/authorization/Authorization.java</url>
-          <line>151</line>
+          <line>135</line>
           <option name="timeStamp" value="598" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/authorization/Authorization.java</url>
-          <line>152</line>
+          <line>136</line>
           <option name="timeStamp" value="599" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/authorization/Authorization.java</url>
-          <line>153</line>
+          <line>137</line>
           <option name="timeStamp" value="600" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/authorization/Authorization.java</url>
-          <line>154</line>
+          <line>138</line>
           <option name="timeStamp" value="601" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/authorization/Authorization.java</url>
-          <line>156</line>
+          <line>140</line>
           <option name="timeStamp" value="602" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/authorization/Authorization.java</url>
-          <line>157</line>
+          <line>141</line>
           <option name="timeStamp" value="603" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/authorization/Authorization.java</url>
-          <line>158</line>
+          <line>142</line>
           <option name="timeStamp" value="604" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/authorization/Authorization.java</url>
-          <line>159</line>
+          <line>143</line>
           <option name="timeStamp" value="606" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/authorization/Authorization.java</url>
-          <line>160</line>
+          <line>144</line>
           <option name="timeStamp" value="607" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/authorization/Authorization.java</url>
-          <line>161</line>
+          <line>145</line>
           <option name="timeStamp" value="608" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/authorization/Authorization.java</url>
-          <line>162</line>
+          <line>146</line>
           <option name="timeStamp" value="609" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/authorization/Authorization.java</url>
-          <line>163</line>
+          <line>147</line>
           <option name="timeStamp" value="610" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -972,89 +984,179 @@
           <option name="timeStamp" value="656" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Server/src/main/java/commands/Receiver.java</url>
-          <line>138</line>
-          <option name="timeStamp" value="661" />
+          <url>file://$PROJECT_DIR$/Client/src/main/java/tools/CommandChecker.java</url>
+          <line>107</line>
+          <option name="timeStamp" value="691" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Client/src/main/java/tools/CommandChecker.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="692" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Client/src/main/java/tools/CommandChecker.java</url>
+          <line>110</line>
+          <option name="timeStamp" value="693" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Client/src/main/java/tools/CommandChecker.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="694" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Client/src/main/java/tools/CommandChecker.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="695" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Client/src/main/java/tools/CommandChecker.java</url>
+          <line>111</line>
+          <option name="timeStamp" value="696" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Client/src/main/java/tools/CommandChecker.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="697" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Client/src/main/java/tools/CommandChecker.java</url>
+          <line>114</line>
+          <option name="timeStamp" value="699" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Client/src/main/java/tools/CommandChecker.java</url>
+          <line>115</line>
+          <option name="timeStamp" value="700" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Client/src/main/java/tools/CommandChecker.java</url>
+          <line>116</line>
+          <option name="timeStamp" value="701" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Client/src/main/java/tools/CommandChecker.java</url>
+          <line>117</line>
+          <option name="timeStamp" value="702" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Client/src/main/java/tools/CommandChecker.java</url>
+          <line>118</line>
+          <option name="timeStamp" value="704" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Client/src/main/java/tools/CommandChecker.java</url>
+          <line>119</line>
+          <option name="timeStamp" value="705" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/commands/Receiver.java</url>
-          <line>140</line>
-          <option name="timeStamp" value="662" />
+          <line>324</line>
+          <option name="timeStamp" value="707" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/commands/Receiver.java</url>
-          <line>141</line>
-          <option name="timeStamp" value="664" />
+          <line>325</line>
+          <option name="timeStamp" value="708" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/commands/Receiver.java</url>
-          <line>142</line>
-          <option name="timeStamp" value="665" />
+          <line>327</line>
+          <option name="timeStamp" value="709" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/commands/Receiver.java</url>
-          <line>143</line>
-          <option name="timeStamp" value="666" />
+          <line>326</line>
+          <option name="timeStamp" value="710" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/commands/Receiver.java</url>
-          <line>144</line>
-          <option name="timeStamp" value="667" />
+          <line>329</line>
+          <option name="timeStamp" value="711" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/commands/Receiver.java</url>
-          <line>145</line>
-          <option name="timeStamp" value="671" />
+          <line>330</line>
+          <option name="timeStamp" value="712" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/commands/Receiver.java</url>
-          <line>146</line>
-          <option name="timeStamp" value="672" />
+          <line>331</line>
+          <option name="timeStamp" value="713" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/commands/Receiver.java</url>
-          <line>152</line>
-          <option name="timeStamp" value="673" />
+          <line>332</line>
+          <option name="timeStamp" value="714" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/commands/Receiver.java</url>
-          <line>153</line>
-          <option name="timeStamp" value="674" />
+          <line>334</line>
+          <option name="timeStamp" value="715" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/commands/Receiver.java</url>
-          <line>154</line>
-          <option name="timeStamp" value="675" />
+          <line>335</line>
+          <option name="timeStamp" value="717" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/commands/Receiver.java</url>
-          <line>155</line>
-          <option name="timeStamp" value="677" />
+          <line>336</line>
+          <option name="timeStamp" value="718" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/commands/Receiver.java</url>
-          <line>156</line>
-          <option name="timeStamp" value="680" />
+          <line>337</line>
+          <option name="timeStamp" value="720" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/commands/Receiver.java</url>
-          <line>157</line>
-          <option name="timeStamp" value="681" />
+          <line>338</line>
+          <option name="timeStamp" value="721" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/commands/Receiver.java</url>
-          <line>158</line>
-          <option name="timeStamp" value="682" />
+          <line>339</line>
+          <option name="timeStamp" value="722" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/commands/Receiver.java</url>
-          <line>159</line>
-          <option name="timeStamp" value="683" />
+          <line>340</line>
+          <option name="timeStamp" value="723" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Server/src/main/java/commands/Receiver.java</url>
-          <line>160</line>
-          <option name="timeStamp" value="684" />
+          <line>341</line>
+          <option name="timeStamp" value="724" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Server/src/main/java/commands/Receiver.java</url>
+          <line>342</line>
+          <option name="timeStamp" value="725" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Server/src/main/java/commands/Receiver.java</url>
+          <line>343</line>
+          <option name="timeStamp" value="726" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Server/src/main/java/commands/Receiver.java</url>
+          <line>344</line>
+          <option name="timeStamp" value="727" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Server/src/main/java/commands/Receiver.java</url>
+          <line>345</line>
+          <option name="timeStamp" value="728" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Server/src/main/java/commands/Receiver.java</url>
+          <line>346</line>
+          <option name="timeStamp" value="729" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Server/src/main/java/commands/Receiver.java</url>
+          <line>347</line>
+          <option name="timeStamp" value="730" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

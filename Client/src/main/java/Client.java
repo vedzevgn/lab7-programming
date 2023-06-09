@@ -49,7 +49,7 @@ public class Client {
     public void start() throws IOException, InvalidArgsException, ClassNotFoundException, InvalidResponseException {
         logger.info("Клиент запущен.");
         System.out.println("𝘃𝗲𝗱𝘇𝗲𝘃𝗴𝗻\n𝗰𝗹𝗶𝗲𝗻𝘁 (𝗠𝘂𝘀𝗶𝗰𝗕𝗮𝗻𝗱 𝗰𝗼𝗹𝗹𝗲𝗰𝘁𝗶𝗼𝗻)\n");
-        connection = new ChannelConnection("localhost", 50689);
+        connection = new ChannelConnection("localhost", 16015);
 
         //authManager.login();
 
