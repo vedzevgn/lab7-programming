@@ -46,9 +46,9 @@ public class Server {
 
     private static final Logger logger = LogManager.getLogger();
 
-    String DBusername = "s372796";
-    String DBpassword = "88mshzLHxcleudyI";
-    String URLTail = "studs";
+    String DBusername;
+    String DBpassword;
+    String URLTail;
 
     public Server(String[] args) throws IOException, InvalidArgsException {
         if(args.length != 3){
