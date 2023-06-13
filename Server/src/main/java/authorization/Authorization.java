@@ -15,7 +15,6 @@ import java.sql.SQLException;
 import java.util.Random;
 
 import static authorization.Patterns.*;
-import static data.collectionTools.Queries.maxID;
 
 public class Authorization {
     private static final String pepper = "^p^p^r^";
@@ -75,32 +74,6 @@ public class Authorization {
         return md5.digest(baos.toByteArray());
     }
 
-    /*public SignupState signup(String user, String password) {
-        if (isUserExists(user))
-            return SignupState.USER_ALREADY_EXISTS;
-        if (password.length() < 5)
-            return SignupState.SHORT_PASSWORD;
-
-        byte[] salt = getSalt();
-        byte[] passwordHash = getPasswordHash(salt, password);
-
-        try {
-            PreparedStatement registrationStatement = connection.prepareStatement(signUp);
-            registrationStatement.setString(1, user);
-            registrationStatement.setBytes(2, passwordHash);
-            registrationStatement.setBytes(3, salt);
-            if (registrationStatement.executeUpdate() != 0) {
-                return SignupState.SUCCESS;
-            } else {
-                return SignupState.ERROR;
-            }
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return SignupState.ERROR;
-        }
-    }*/
-
     private static byte[] getSalt() {
         byte[] saltBytes = new byte[4];
         new Random().nextBytes(saltBytes);
@@ -126,25 +99,24 @@ public class Authorization {
     }
 
     public boolean signUp(String fullName, String username, String password) throws SQLException {
-        System.out.println(fullName + username + password);
+        //System.out.println(fullName + username + password);
         byte[] salt = getSalt();
         byte[] hash = getPasswordHash(salt, password);
 
-        PreparedStatement checkUser = connection.prepareStatement(checkLoginInfo);
+        PreparedStatement checkUser = connection.prepareStatement(checkIfUserExists);
         checkUser.setString(1, username);
-        checkUser.setBytes(2, hash);
         ResultSet userExists = checkUser.executeQuery();
         if(userExists.next()) {
             return false;
+        } else {
+            PreparedStatement addUser = connection.prepareStatement(signUp);
+            addUser.setString(1, fullName);
+            addUser.setString(2, username);
+            addUser.setBytes(3, hash);
+            addUser.setBytes(4, salt);
+            addUser.executeUpdate();
+            return true;
         }
-
-        PreparedStatement addUser = connection.prepareStatement(signUp);
-        addUser.setString(1, fullName);
-        addUser.setString(2, username);
-        addUser.setBytes(3, hash);
-        addUser.setBytes(4, salt);
-        addUser.executeUpdate();
-        return true;
     }
 
     public String getName(String username, String password) throws SQLException {

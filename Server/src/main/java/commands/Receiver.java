@@ -92,7 +92,7 @@ public class Receiver {
             manager.send(builder.createResponse("Добро пожаловать, " + authorization.getName(arguments[1], arguments[2]) + "!\nВведите help для просмотра доступных команд.", false, true));
         } else {
             manager.send(builder.createResponse("failed", false, true));
-            manager.send(builder.createResponse("Неверное имя пользователя или пароль.", false, true));
+            manager.send(builder.createResponse("Имя пользователя занято, попробуйте выбрать другое.", false, true));
         }
         return true;
     }

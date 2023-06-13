@@ -85,8 +85,9 @@ public class ConsoleManager {
         if(checker.isCorrect(commands, consoleTools.commandFromLine(line), consoleTools.argsFromLine(line))) {
             if (checker.isExit(commands, consoleTools.commandFromLine(line))) {
                 connection.send(builder.buildRequest(line, null, null, username, password));
-                System.out.println(((Response) connection.receive()).getText());
-                consoleTools.readyForExit((Response) connection.receive());
+                Response exitResponse = (Response) connection.receive();
+                //System.out.println(exitResponse.getText());
+                consoleTools.readyForExit(exitResponse);
                 System.exit(0);
             }
             if (checker.isObjectRequired(commands, consoleTools.commandFromLine(line))) {

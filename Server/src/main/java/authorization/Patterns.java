@@ -19,6 +19,12 @@ public class Patterns {
                         WHERE login = ? AND password = ?;
                         """;
 
+    public static final String checkIfUserExists = """
+                        SELECT user_id
+                        FROM users
+                        WHERE login = ?;
+                        """;
+
     public static final String getSalt = """
                         SELECT salt
                         FROM users
