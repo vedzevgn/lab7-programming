@@ -29,20 +29,16 @@ import org.apache.logging.log4j.Logger;
 
 public class Server {
     public String dataPath;
-
     public Receiver receiver;
-    public DatagramConnection manager;
+    public static DatagramConnection manager;
     public Invoker invoker;
     public ResponseBuilder builder;
     public CommandChecker checker = new CommandChecker();
     public boolean executing = false;
-
-    private boolean running = true;
+    public static boolean running = true;
     String[] array;
     static byte[] buffer = new byte[32];
-
-    private ExecutorService requestReceiveService = Executors.newFixedThreadPool(5);
-    private ExecutorService commandsExecutingService = Executors.newCachedThreadPool();
+    static boolean checkSkip;
 
     private static final Logger logger = LogManager.getLogger();
 
@@ -60,6 +56,10 @@ public class Server {
         DBUsername = args[0];
         DBPassword = args[1];
         URLTail = args[2];
+    }
+
+    public static void setCheckSkip(boolean checkSkip) {
+        Server.checkSkip = checkSkip;
     }
 
     public void start() throws IOException, InvalidArgsException, ClassNotFoundException, SQLException, ExecutionException, InterruptedException {
@@ -96,17 +96,21 @@ public class Server {
             System.exit(1);
         }
 
+        Callable<Request> callableRequestGetter = () -> {
+            return (Request) manager.receive();
+        };
 
-
+        new Thread(() -> {
         Request request;
 
         while(running){
-            Callable<Request> callableReceiving = () -> {
-                return (Request) manager.receive();
-            };
+            try {
+                request = callableRequestGetter.call();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
 
-            boolean checkSkip = false;
-            request = requestReceiveService.submit(callableReceiving).get();
+            checkSkip = false;
 
             String line = handler.getText(request);
 
@@ -127,7 +131,6 @@ public class Server {
             if(!checkSkip) {
                 if (!checker.isExecute(line) && !executing) {
                     String thisLine = line;
-                    commandsExecutingService.submit(() -> {
                         logger.info("Получена команда: " + thisLine + ".");
                         try {
                             invoker.runCommand(thisLine, dataPath, false, array, object, username, password);
@@ -138,17 +141,25 @@ public class Server {
                         } catch (SQLException e) {
                             throw new RuntimeException(e);
                         }
-                    });
                 } else {
                     request = (Request) manager.receive();
                     line = handler.getText(request);
                     String[] arguments = handler.getArgs(request);
                     executing = true;
-                    invoker.runCommand(line, dataPath, true, arguments, object, username, password);
+                    try {
+                        invoker.runCommand(line, dataPath, true, arguments, object, username, password);
+                    } catch (InvalidArgsException e) {
+                        throw new RuntimeException(e);
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    } catch (SQLException e) {
+                        throw new RuntimeException(e);
+                    }
                 }
             }
             checkSkip = false;
         }
+        }).start();
     }
 }
 

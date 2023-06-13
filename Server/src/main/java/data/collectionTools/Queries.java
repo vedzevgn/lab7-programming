@@ -7,6 +7,36 @@ public class Queries {
                         ORDER BY b.band_id;
                         """;
 
+    public static final String checkTableExists = """
+            SELECT EXISTS (SELECT 1 FROM information_schema.tables WHERE table_name = ?);
+            """;
+
+    public static final String createBandsTable = """
+            create table bands
+              (
+              	band_id serial primary key,
+              	band_name varchar(512) not null,
+              	genre varchar(128) not null,
+              	x_coordinate double precision not null,
+              	y_coordinate double precision not null,
+              	studio_name varchar(512),
+              	nop integer not null,
+              	creation_date varchar(128),
+              	user_id integer not_null
+              );
+            """;
+
+    public static final String createUsersTable = """
+            create table users
+              (
+              	user_id serial primary key,
+              	full_name varchar(256) not null,
+              	login varchar(256) not null,
+              	password bytea not null,
+              	salt bytea not null
+              );
+            """;
+
     public static final String insertCoordinates = """
                         INSERT INTO coordinates (x, y)
                                 VALUES (?, ?);

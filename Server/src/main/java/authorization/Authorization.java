@@ -50,7 +50,7 @@ public class Authorization {
             result.next();
             return result.getInt(1);
         } catch (SQLException e) {
-            e.printStackTrace();
+            System.out.println("Пользователь не существует.");
             return 0;
         }
     }

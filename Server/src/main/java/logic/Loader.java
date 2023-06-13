@@ -8,6 +8,7 @@ import parameters.MusicBand;
 
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 /**
@@ -39,6 +40,11 @@ public class Loader {
 
     public ArrayList<MusicBand> loadCollectionFromDB() {
         DBCollectionLoader dbLoader = new DBCollectionLoader(connection);
+        try {
+            dbLoader.checkTablesExists(connection.getDBConnection());
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
         collection = dbLoader.loadCollection(connection);
         System.out.println("Загружена коллекция: " + collection.getClass().getName() + ". Количество элементов: " + collection.size() + ".");
         return collection;

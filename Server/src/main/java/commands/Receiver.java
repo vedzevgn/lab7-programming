@@ -331,8 +331,7 @@ public class Receiver {
                 if (band.isPresent()) {
                     if(Objects.equals(ID, band.get().getUserID())) {
                         manager.send(builder.createResponse("Вы уверены, что хотите удалить элемент? Данное действие необратимо. (y/n)", true, true));
-                        Request request = (Request) manager.receive();
-                        if (new RemoveOperations().confirm(parser.getText(request))) {
+                        if (new RemoveOperations().confirm(parser.getText((Request) manager.receive()))) {
                             reentrantLockOnWrite.lock();
                             dbManager.removeBand(band.get().getId());
                             reentrantLockOnWrite.unlock();

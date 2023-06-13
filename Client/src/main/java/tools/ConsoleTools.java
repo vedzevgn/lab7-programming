@@ -138,6 +138,9 @@ public class ConsoleTools {
     //}
 
     public static String commandFromLine(String line){
+        if(line == null){
+            System.exit(0);
+        }
         String commandWord = line.toLowerCase().split(" ")[0];
         return commandWord;
     }

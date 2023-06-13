@@ -6,9 +6,7 @@ import parameters.MusicBand;
 import parameters.MusicGenre;
 import parameters.Studio;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
@@ -19,6 +17,32 @@ public class DBCollectionLoader {
 
     public DBCollectionLoader(DBConnection connection) {
         this.connection = connection;
+    }
+
+    public void checkTablesExists(Connection connection) throws SQLException {
+        boolean exists = false;
+        PreparedStatement checkTableSt = connection.prepareStatement(checkTableExists);
+        checkTableSt.setString(1, "bands");
+        ResultSet rs = checkTableSt.executeQuery();
+        if (rs.next()) {
+            exists = rs.getBoolean(1);
+        }
+        if(!exists){
+            PreparedStatement createBandsTable = connection.prepareStatement(Queries.createBandsTable);
+            createBandsTable.executeUpdate();
+        }
+
+        exists = false;
+        checkTableSt = connection.prepareStatement(checkTableExists);
+        checkTableSt.setString(1, "users");
+        rs = checkTableSt.executeQuery();
+        if (rs.next()) {
+            exists = rs.getBoolean(1);
+        }
+        if(!exists){
+            PreparedStatement createBandsTable = connection.prepareStatement(createUsersTable);
+            createBandsTable.executeUpdate();
+        }
     }
     
     public ArrayList<MusicBand> loadCollection(DBConnection connection) {
