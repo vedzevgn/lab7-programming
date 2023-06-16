@@ -539,6 +539,7 @@ public class Receiver {
                 reentrantLockOnWrite.lock();
                 if(dbManager.updateBand(newBand, id, ID)) {
                     newBand.setId(id);
+                    newBand.setUserID(ID);
                     list.set(list.indexOf(band.get()), newBand);
                     manager.send(builder.createResponse("Объект заменён на: " + newBand.getName() + " (ID: " + newBand.getId() + ")", false, true));
                 } else {
@@ -549,20 +550,7 @@ public class Receiver {
             } else {
                 manager.send(builder.createResponse("Вы не можете модифицировать объекты, созданные другими пользователями.", false, true));
             }
-            manager.send(builder.createResponse("", true, false));
-            MusicBand newBand = (MusicBand) parser.getObject((Request) manager.receive());
-            //System.out.println("Принят объект: " + newBand.getName());
-            logger.info("Принят объект: " + newBand.getName() + ".");
 
-            reentrantLockOnWrite.lock();
-            if(dbManager.updateBand(newBand, id, ID)) {
-                newBand.setId(id);
-                list.set(list.indexOf(band.get()), newBand);
-                manager.send(builder.createResponse("Объект заменён на: " + newBand.getName() + " (ID: " + newBand.getId() + ")", false, true));
-            } else {
-                manager.send(builder.createResponse("Объект с указанным ID не существует.", false, true));
-            }
-            reentrantLockOnWrite.unlock();
 
         } else {
             //System.out.println("Максимальный ID: " + (list.size()-1) + ". Минимальный ID: 0.");

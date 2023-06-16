@@ -101,16 +101,17 @@ public class Server {
         };
 
         new Thread(() -> {
-        Request request;
+            Request request;
 
-        while(running){
-            try {
-                request = callableRequestGetter.call();
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
+            while(running){
+                try {
+                    request = callableRequestGetter.call();
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
 
-            checkSkip = false;
+                checkSkip = false;
+            //request = (Request) manager.receive();
 
             String line = handler.getText(request);
 

@@ -1,233 +1,94 @@
-2023-06-13 10:46:24,672 INFO Server [main] Запуск сервера.
-2023-06-13 10:46:25,043 INFO c.Receiver [main] Receiver инициализорован.
-2023-06-13 10:46:25,053 INFO c.Invoker [main] Invoker инициализирован.
-2023-06-13 10:46:25,053 INFO Server [main] Invoker и Receiver запущены.
-2023-06-13 13:52:36,345 INFO Server [main] Запуск сервера.
-2023-06-13 13:52:36,758 INFO c.Receiver [main] Receiver инициализорован.
-2023-06-13 13:52:36,775 INFO c.Invoker [main] Invoker инициализирован.
-2023-06-13 13:52:36,775 INFO Server [main] Invoker и Receiver запущены.
-2023-06-13 13:52:42,128 INFO Server [main] Список команд отправлен.
-2023-06-13 13:52:47,824 INFO Server [pool-3-thread-1] Получена команда: show.
-2023-06-13 13:52:47,825 INFO c.Invoker [pool-3-thread-1] Проверка команды.
-2023-06-13 13:52:47,837 INFO r.ResponseBuilder [pool-3-thread-1] Создан ответ.
-2023-06-13 13:52:50,558 INFO Server [pool-3-thread-1] Получена команда: help.
-2023-06-13 13:52:50,559 INFO c.Invoker [pool-3-thread-1] Проверка команды.
-2023-06-13 13:52:50,559 INFO c.Invoker [pool-3-thread-1] Запуск выполнения команды.
-2023-06-13 13:52:50,561 INFO r.ResponseBuilder [pool-3-thread-1] Создан ответ.
-2023-06-13 13:52:53,460 INFO Server [pool-3-thread-1] Получена команда: exit.
-2023-06-13 13:52:53,460 INFO c.Invoker [pool-3-thread-1] Проверка команды.
-2023-06-13 13:52:53,461 INFO c.Invoker [pool-3-thread-1] Запуск выполнения команды.
-2023-06-13 13:52:53,462 INFO r.ResponseBuilder [pool-3-thread-1] Создан ответ.
-2023-06-13 13:52:57,716 INFO Server [main] Список команд отправлен.
-2023-06-13 13:54:10,060 INFO Server [main] Список команд отправлен.
-2023-06-13 13:54:15,308 INFO Server [main] Список команд отправлен.
-2023-06-13 13:54:23,076 INFO Server [pool-3-thread-2] Получена команда: login null null.
-2023-06-13 13:54:23,076 INFO c.Invoker [pool-3-thread-2] Проверка команды.
-2023-06-13 13:54:23,076 INFO c.Invoker [pool-3-thread-2] Запуск выполнения команды.
-2023-06-13 13:54:23,078 INFO r.ResponseBuilder [pool-3-thread-2] Создан ответ.
-2023-06-13 13:54:23,079 INFO r.ResponseBuilder [pool-3-thread-2] Создан ответ.
-2023-06-13 13:55:37,255 INFO Server [main] Запуск сервера.
-2023-06-13 13:55:37,668 INFO c.Receiver [main] Receiver инициализорован.
-2023-06-13 13:55:37,710 INFO c.Invoker [main] Invoker инициализирован.
-2023-06-13 13:55:37,710 INFO Server [main] Invoker и Receiver запущены.
-2023-06-13 13:55:41,689 INFO Server [main] Список команд отправлен.
-2023-06-13 13:55:48,046 INFO Server [pool-3-thread-1] Получена команда: login null null.
-2023-06-13 13:55:48,047 INFO c.Invoker [pool-3-thread-1] Проверка команды.
-2023-06-13 13:55:48,047 INFO c.Invoker [pool-3-thread-1] Запуск выполнения команды.
-2023-06-13 13:55:48,056 INFO r.ResponseBuilder [pool-3-thread-1] Создан ответ.
-2023-06-13 13:55:48,058 INFO r.ResponseBuilder [pool-3-thread-1] Создан ответ.
-2023-06-13 14:03:35,092 INFO Server [main] Запуск сервера.
-2023-06-13 14:03:35,308 INFO c.Receiver [main] Receiver инициализорован.
-2023-06-13 14:03:35,322 INFO c.Invoker [main] Invoker инициализирован.
-2023-06-13 14:03:35,322 INFO Server [main] Invoker и Receiver запущены.
-2023-06-13 14:29:59,370 INFO Server [main] Запуск сервера.
-2023-06-13 14:29:59,784 INFO c.Receiver [main] Receiver инициализорован.
-2023-06-13 14:29:59,797 INFO c.Invoker [main] Invoker инициализирован.
-2023-06-13 14:29:59,797 INFO Server [main] Invoker и Receiver запущены.
-2023-06-13 14:30:30,704 INFO Server [main] Запуск сервера.
-2023-06-13 14:30:31,016 INFO c.Receiver [main] Receiver инициализорован.
-2023-06-13 14:30:31,029 INFO c.Invoker [main] Invoker инициализирован.
-2023-06-13 14:30:31,029 INFO Server [main] Invoker и Receiver запущены.
-2023-06-13 14:31:00,006 INFO Server [main] Запуск сервера.
-2023-06-13 14:31:00,222 INFO c.Receiver [main] Receiver инициализорован.
-2023-06-13 14:31:00,232 INFO c.Invoker [main] Invoker инициализирован.
-2023-06-13 14:31:00,233 INFO Server [main] Invoker и Receiver запущены.
-2023-06-13 14:31:03,745 INFO Server [main] Список команд отправлен.
-2023-06-13 14:31:34,369 INFO Server [pool-3-thread-1] Получена команда: login vedzevgn 18381838.
-2023-06-13 14:31:34,370 INFO c.Invoker [pool-3-thread-1] Проверка команды.
-2023-06-13 14:31:34,371 INFO c.Invoker [pool-3-thread-1] Запуск выполнения команды.
-2023-06-13 14:31:34,387 INFO r.ResponseBuilder [pool-3-thread-1] Создан ответ.
-2023-06-13 14:31:34,391 INFO r.ResponseBuilder [pool-3-thread-1] Создан ответ.
-2023-06-13 14:31:38,441 INFO Server [pool-3-thread-1] Получена команда: remove_by_id 1.
-2023-06-13 14:31:38,442 INFO c.Invoker [pool-3-thread-1] Проверка команды.
-2023-06-13 14:31:38,443 INFO c.Invoker [pool-3-thread-1] Запуск выполнения команды.
-2023-06-13 14:31:38,446 INFO r.ResponseBuilder [pool-3-thread-1] Создан ответ.
-2023-06-13 14:31:39,885 INFO Server [pool-3-thread-2] Получена команда: y.
-2023-06-13 14:31:39,886 INFO c.Invoker [pool-3-thread-2] Проверка команды.
-2023-06-13 14:31:39,886 ERROR c.Invoker [pool-3-thread-2] Неизвестная команда: y.
-2023-06-13 14:31:39,887 INFO r.ResponseBuilder [pool-3-thread-2] Создан ответ.
-2023-06-13 14:33:15,777 INFO Server [main] Запуск сервера.
-2023-06-13 14:33:16,008 INFO c.Receiver [main] Receiver инициализорован.
-2023-06-13 14:33:16,019 INFO c.Invoker [main] Invoker инициализирован.
-2023-06-13 14:33:16,019 INFO Server [main] Invoker и Receiver запущены.
-2023-06-13 14:33:53,031 INFO Server [main] Запуск сервера.
-2023-06-13 14:33:53,607 INFO c.Receiver [main] Receiver инициализорован.
-2023-06-13 14:33:53,621 INFO c.Invoker [main] Invoker инициализирован.
-2023-06-13 14:33:53,621 INFO Server [main] Invoker и Receiver запущены.
-2023-06-13 14:34:03,559 INFO Server [pool-3-thread-1] Получена команда: remove_by_id 1.
-2023-06-13 14:34:03,560 INFO c.Invoker [pool-3-thread-1] Проверка команды.
-2023-06-13 14:34:03,567 INFO c.Invoker [pool-3-thread-1] Запуск выполнения команды.
-2023-06-13 14:34:03,570 INFO r.ResponseBuilder [pool-3-thread-1] Создан ответ.
-2023-06-13 14:34:04,621 INFO Server [pool-3-thread-2] Получена команда: y.
-2023-06-13 14:34:04,622 INFO c.Invoker [pool-3-thread-2] Проверка команды.
-2023-06-13 14:34:04,623 ERROR c.Invoker [pool-3-thread-2] Неизвестная команда: y.
-2023-06-13 14:34:04,624 INFO r.ResponseBuilder [pool-3-thread-2] Создан ответ.
-2023-06-13 14:34:37,828 INFO Server [main] Запуск сервера.
-2023-06-13 14:34:38,622 INFO c.Receiver [main] Receiver инициализорован.
-2023-06-13 14:34:38,691 INFO c.Invoker [main] Invoker инициализирован.
-2023-06-13 14:34:38,691 INFO Server [main] Invoker и Receiver запущены.
-2023-06-13 14:34:46,255 INFO Server [pool-3-thread-1] Получена команда: remove_by_id 1.
-2023-06-13 14:34:47,761 INFO c.Invoker [pool-3-thread-1] Проверка команды.
-2023-06-13 14:34:48,745 INFO c.Invoker [pool-3-thread-1] Запуск выполнения команды.
-2023-06-13 14:34:49,995 INFO r.ResponseBuilder [pool-3-thread-1] Создан ответ.
-2023-06-13 14:34:53,228 INFO Server [pool-3-thread-2] Получена команда: y.
-2023-06-13 14:34:58,862 INFO c.Invoker [pool-3-thread-2] Проверка команды.
-2023-06-13 14:34:59,478 ERROR c.Invoker [pool-3-thread-2] Неизвестная команда: y.
-2023-06-13 14:34:59,945 INFO r.ResponseBuilder [pool-3-thread-2] Создан ответ.
-2023-06-13 14:39:17,438 INFO Server [main] Список команд отправлен.
-2023-06-13 14:39:26,660 INFO Server [pool-3-thread-1] Получена команда: login vedzevgn 18381838.
-2023-06-13 14:39:28,183 INFO c.Invoker [pool-3-thread-1] Проверка команды.
-2023-06-13 14:39:28,870 INFO c.Invoker [pool-3-thread-1] Запуск выполнения команды.
-2023-06-13 14:39:28,875 INFO r.ResponseBuilder [pool-3-thread-1] Создан ответ.
-2023-06-13 14:39:28,879 INFO r.ResponseBuilder [pool-3-thread-1] Создан ответ.
-2023-06-13 14:39:35,364 INFO Server [pool-3-thread-1] Получена команда: remove_by_id 1.
-2023-06-13 14:39:37,436 INFO c.Invoker [pool-3-thread-1] Проверка команды.
-2023-06-13 14:39:41,153 INFO c.Invoker [pool-3-thread-1] Запуск выполнения команды.
-2023-06-13 14:39:49,319 INFO r.ResponseBuilder [pool-3-thread-1] Создан ответ.
-2023-06-13 14:40:09,358 INFO Server [main] Список команд отправлен.
-2023-06-13 14:40:22,577 INFO Server [main] Запуск сервера.
-2023-06-13 14:40:24,899 INFO c.Receiver [main] Receiver инициализорован.
-2023-06-13 14:40:25,092 INFO c.Invoker [main] Invoker инициализирован.
-2023-06-13 14:40:25,093 INFO Server [main] Invoker и Receiver запущены.
-2023-06-13 14:54:22,598 INFO Server [main] Запуск сервера.
-2023-06-13 14:54:23,560 INFO c.Receiver [main] Receiver инициализорован.
-2023-06-13 14:54:23,585 INFO c.Invoker [main] Invoker инициализирован.
-2023-06-13 14:54:23,586 INFO Server [main] Invoker и Receiver запущены.
-2023-06-13 14:54:29,118 INFO Server [main] Список команд отправлен.
-2023-06-13 14:54:30,507 INFO Server [main] Получена команда: show.
-2023-06-13 14:54:30,507 INFO c.Invoker [main] Проверка команды.
-2023-06-13 14:54:30,519 INFO r.ResponseBuilder [main] Создан ответ.
-2023-06-13 14:54:38,689 INFO Server [main] Получена команда: login vedzevgn 18381838.
-2023-06-13 14:54:38,690 INFO c.Invoker [main] Проверка команды.
-2023-06-13 14:54:38,690 INFO c.Invoker [main] Запуск выполнения команды.
-2023-06-13 14:54:38,693 INFO r.ResponseBuilder [main] Создан ответ.
-2023-06-13 14:54:38,695 INFO r.ResponseBuilder [main] Создан ответ.
-2023-06-13 14:54:40,407 INFO Server [main] Получена команда: show.
-2023-06-13 14:54:40,407 INFO c.Invoker [main] Проверка команды.
-2023-06-13 14:54:40,408 INFO c.Invoker [main] Запуск выполнения команды.
-2023-06-13 14:54:40,423 INFO r.ResponseBuilder [main] Создан ответ.
-2023-06-13 15:05:19,029 INFO Server [main] Запуск сервера.
-2023-06-13 15:05:19,369 INFO c.Receiver [main] Receiver инициализорован.
-2023-06-13 15:05:19,379 INFO c.Invoker [main] Invoker инициализирован.
-2023-06-13 15:05:19,379 INFO Server [main] Invoker и Receiver запущены.
-2023-06-13 15:05:23,673 INFO Server [Thread-0] Список команд отправлен.
-2023-06-13 15:05:29,317 INFO Server [Thread-0] Получена команда: show.
-2023-06-13 15:05:29,317 INFO c.Invoker [Thread-0] Проверка команды.
-2023-06-13 15:05:29,326 INFO r.ResponseBuilder [Thread-0] Создан ответ.
-2023-06-13 15:05:33,879 INFO Server [Thread-0] Получена команда: help.
-2023-06-13 15:05:33,880 INFO c.Invoker [Thread-0] Проверка команды.
-2023-06-13 15:05:33,880 INFO c.Invoker [Thread-0] Запуск выполнения команды.
-2023-06-13 15:05:33,881 INFO r.ResponseBuilder [Thread-0] Создан ответ.
-2023-06-13 15:05:42,542 INFO Server [Thread-0] Получена команда: login vedzevgn 18381838.
-2023-06-13 15:05:42,542 INFO c.Invoker [Thread-0] Проверка команды.
-2023-06-13 15:05:42,542 INFO c.Invoker [Thread-0] Запуск выполнения команды.
-2023-06-13 15:05:42,546 INFO r.ResponseBuilder [Thread-0] Создан ответ.
-2023-06-13 15:05:42,548 INFO r.ResponseBuilder [Thread-0] Создан ответ.
-2023-06-13 15:07:02,712 INFO Server [Thread-0] Список команд отправлен.
-2023-06-13 15:07:04,136 INFO Server [Thread-0] Получена команда: show.
-2023-06-13 15:07:04,137 INFO c.Invoker [Thread-0] Проверка команды.
-2023-06-13 15:07:04,144 INFO r.ResponseBuilder [Thread-0] Создан ответ.
-2023-06-13 15:07:12,813 INFO Server [Thread-0] Получена команда: login vedzevgn null.
-2023-06-13 15:07:12,813 INFO c.Invoker [Thread-0] Проверка команды.
-2023-06-13 15:07:12,813 INFO c.Invoker [Thread-0] Запуск выполнения команды.
-2023-06-13 15:07:12,815 INFO r.ResponseBuilder [Thread-0] Создан ответ.
-2023-06-13 15:07:12,816 INFO r.ResponseBuilder [Thread-0] Создан ответ.
-2023-06-13 15:07:24,874 INFO Server [Thread-0] Получена команда: show.
-2023-06-13 15:07:24,875 INFO c.Invoker [Thread-0] Проверка команды.
-2023-06-13 15:07:24,876 INFO r.ResponseBuilder [Thread-0] Создан ответ.
-2023-06-13 15:07:45,467 INFO Server [Thread-0] Получена команда: login gsn49 259567.
-2023-06-13 15:07:45,468 INFO c.Invoker [Thread-0] Проверка команды.
-2023-06-13 15:07:45,468 INFO c.Invoker [Thread-0] Запуск выполнения команды.
-2023-06-13 15:07:45,472 INFO r.ResponseBuilder [Thread-0] Создан ответ.
-2023-06-13 15:07:45,473 INFO r.ResponseBuilder [Thread-0] Создан ответ.
-2023-06-13 15:07:55,843 INFO Server [Thread-0] Получена команда: login gsn49 250567.
-2023-06-13 15:07:55,844 INFO c.Invoker [Thread-0] Проверка команды.
-2023-06-13 15:07:55,844 INFO c.Invoker [Thread-0] Запуск выполнения команды.
-2023-06-13 15:07:55,846 INFO r.ResponseBuilder [Thread-0] Создан ответ.
-2023-06-13 15:07:55,847 INFO r.ResponseBuilder [Thread-0] Создан ответ.
-2023-06-13 15:07:58,652 INFO Server [Thread-0] Получена команда: show.
-2023-06-13 15:07:58,652 INFO c.Invoker [Thread-0] Проверка команды.
-2023-06-13 15:07:58,653 INFO c.Invoker [Thread-0] Запуск выполнения команды.
-2023-06-13 15:07:58,682 INFO r.ResponseBuilder [Thread-0] Создан ответ.
-2023-06-13 15:08:03,716 INFO Server [Thread-0] Получена команда: show.
-2023-06-13 15:08:03,717 INFO c.Invoker [Thread-0] Проверка команды.
-2023-06-13 15:08:03,719 INFO c.Invoker [Thread-0] Запуск выполнения команды.
-2023-06-13 15:08:03,720 INFO r.ResponseBuilder [Thread-0] Создан ответ.
-2023-06-13 15:19:37,488 INFO Server [main] Запуск сервера.
-2023-06-13 15:19:37,726 INFO c.Receiver [main] Receiver инициализорован.
-2023-06-13 15:19:37,736 INFO c.Invoker [main] Invoker инициализирован.
-2023-06-13 15:19:37,736 INFO Server [main] Invoker и Receiver запущены.
-2023-06-13 15:20:07,759 INFO Server [main] Запуск сервера.
-2023-06-13 15:20:08,010 INFO c.Receiver [main] Receiver инициализорован.
-2023-06-13 15:20:08,025 INFO c.Invoker [main] Invoker инициализирован.
-2023-06-13 15:20:08,025 INFO Server [main] Invoker и Receiver запущены.
-2023-06-13 15:20:10,796 INFO Server [Thread-0] Список команд отправлен.
-2023-06-13 15:36:17,784 INFO Server [main] Запуск сервера.
-2023-06-13 15:36:18,581 INFO c.Receiver [main] Receiver инициализорован.
-2023-06-13 15:36:18,602 INFO c.Invoker [main] Invoker инициализирован.
-2023-06-13 15:36:18,603 INFO Server [main] Invoker и Receiver запущены.
-2023-06-13 15:37:24,434 INFO Server [main] Запуск сервера.
-2023-06-13 15:37:24,959 INFO c.Receiver [main] Receiver инициализорован.
-2023-06-13 15:37:24,979 INFO c.Invoker [main] Invoker инициализирован.
-2023-06-13 15:37:24,980 INFO Server [main] Invoker и Receiver запущены.
-2023-06-13 15:37:30,676 INFO Server [main] Список команд отправлен.
-2023-06-13 15:37:54,495 INFO Server [main] Запуск сервера.
-2023-06-13 15:37:54,719 INFO c.Receiver [main] Receiver инициализорован.
-2023-06-13 15:37:54,728 INFO c.Invoker [main] Invoker инициализирован.
-2023-06-13 15:37:54,729 INFO Server [main] Invoker и Receiver запущены.
-2023-06-13 15:38:51,921 INFO Server [main] Запуск сервера.
-2023-06-13 15:38:52,406 INFO c.Receiver [main] Receiver инициализорован.
-2023-06-13 15:38:52,424 INFO c.Invoker [main] Invoker инициализирован.
-2023-06-13 15:38:52,424 INFO Server [main] Invoker и Receiver запущены.
-2023-06-13 15:39:29,353 INFO Server [main] Запуск сервера.
-2023-06-13 15:39:30,039 INFO c.Receiver [main] Receiver инициализорован.
-2023-06-13 15:39:30,057 INFO c.Invoker [main] Invoker инициализирован.
-2023-06-13 15:39:30,057 INFO Server [main] Invoker и Receiver запущены.
-2023-06-13 15:50:59,230 INFO Server [main] Запуск сервера.
-2023-06-13 15:50:59,562 INFO c.Receiver [main] Receiver инициализорован.
-2023-06-13 15:50:59,572 INFO c.Invoker [main] Invoker инициализирован.
-2023-06-13 15:50:59,572 INFO Server [main] Invoker и Receiver запущены.
-2023-06-13 15:51:03,385 INFO Server [Thread-0] Список команд отправлен.
-2023-06-13 15:53:21,858 INFO Server [Thread-0] Получена команда: show.
-2023-06-13 15:53:21,864 INFO c.Invoker [Thread-0] Проверка команды.
-2023-06-13 15:53:21,909 INFO r.ResponseBuilder [Thread-0] Создан ответ.
-2023-06-13 15:54:26,126 INFO Server [main] Запуск сервера.
-2023-06-13 15:54:26,410 INFO c.Receiver [main] Receiver инициализорован.
-2023-06-13 15:54:26,422 INFO c.Invoker [main] Invoker инициализирован.
-2023-06-13 15:54:26,422 INFO Server [main] Invoker и Receiver запущены.
-2023-06-13 15:54:30,128 INFO Server [Thread-0] Список команд отправлен.
-2023-06-13 15:54:31,621 INFO Server [Thread-0] Получена команда: show.
-2023-06-13 15:54:31,622 INFO c.Invoker [Thread-0] Проверка команды.
-2023-06-13 15:54:31,631 INFO r.ResponseBuilder [Thread-0] Создан ответ.
-2023-06-13 15:55:17,205 INFO Server [main] Запуск сервера.
-2023-06-13 15:55:17,483 INFO c.Receiver [main] Receiver инициализорован.
-2023-06-13 15:55:17,492 INFO c.Invoker [main] Invoker инициализирован.
-2023-06-13 15:55:17,492 INFO Server [main] Invoker и Receiver запущены.
-2023-06-13 15:55:20,100 INFO Server [Thread-0] Получена команда: show.
-2023-06-13 15:55:20,101 INFO c.Invoker [Thread-0] Проверка команды.
-2023-06-13 15:55:20,108 INFO r.ResponseBuilder [Thread-0] Создан ответ.
-2023-06-13 15:55:30,893 INFO Server [Thread-0] Получена команда: login vedzevgn 18381838.
-2023-06-13 15:55:30,893 INFO c.Invoker [Thread-0] Проверка команды.
-2023-06-13 15:55:30,894 INFO c.Invoker [Thread-0] Запуск выполнения команды.
-2023-06-13 15:55:30,900 INFO r.ResponseBuilder [Thread-0] Создан ответ.
-2023-06-13 15:55:30,902 INFO r.ResponseBuilder [Thread-0] Создан ответ.
+2023-06-15 01:28:14,783 INFO Server [main] Запуск сервера.
+2023-06-15 01:28:15,195 INFO c.Receiver [main] Receiver инициализорован.
+2023-06-15 01:28:15,205 INFO c.Invoker [main] Invoker инициализирован.
+2023-06-15 01:28:15,205 INFO Server [main] Invoker и Receiver запущены.
+2023-06-15 01:28:38,252 INFO Server [main] Запуск сервера.
+2023-06-15 01:28:38,536 INFO c.Receiver [main] Receiver инициализорован.
+2023-06-15 01:28:38,541 INFO c.Invoker [main] Invoker инициализирован.
+2023-06-15 01:28:38,542 INFO Server [main] Invoker и Receiver запущены.
+2023-06-15 01:40:58,005 INFO Server [main] Запуск сервера.
+2023-06-15 01:40:58,264 INFO c.Receiver [main] Receiver инициализорован.
+2023-06-15 01:40:58,273 INFO c.Invoker [main] Invoker инициализирован.
+2023-06-15 01:40:58,274 INFO Server [main] Invoker и Receiver запущены.
+2023-06-15 01:41:02,393 INFO Server [Thread-0] Список команд отправлен.
+2023-06-15 01:41:05,278 INFO Server [Thread-0] Получена команда: show.
+2023-06-15 01:41:05,279 INFO c.Invoker [Thread-0] Проверка команды.
+2023-06-15 01:41:05,292 INFO r.ResponseBuilder [Thread-0] Создан ответ.
+2023-06-15 01:41:13,472 INFO Server [Thread-0] Получена команда: login vedzevgn 18381838.
+2023-06-15 01:41:13,472 INFO c.Invoker [Thread-0] Проверка команды.
+2023-06-15 01:41:13,472 INFO c.Invoker [Thread-0] Запуск выполнения команды.
+2023-06-15 01:41:13,478 INFO r.ResponseBuilder [Thread-0] Создан ответ.
+2023-06-15 01:41:13,480 INFO r.ResponseBuilder [Thread-0] Создан ответ.
+2023-06-15 01:41:16,569 INFO Server [Thread-0] Получена команда: show.
+2023-06-15 01:41:16,569 INFO c.Invoker [Thread-0] Проверка команды.
+2023-06-15 01:41:16,570 INFO c.Invoker [Thread-0] Запуск выполнения команды.
+2023-06-15 01:41:16,583 INFO r.ResponseBuilder [Thread-0] Создан ответ.
+2023-06-15 01:41:22,533 INFO Server [Thread-0] Получена команда: update 7.
+2023-06-15 01:41:22,534 INFO c.Invoker [Thread-0] Проверка команды.
+2023-06-15 01:41:22,535 INFO c.Invoker [Thread-0] Запуск выполнения команды.
+2023-06-15 01:41:22,537 INFO r.ResponseBuilder [Thread-0] Создан ответ.
+2023-06-15 01:41:31,060 INFO c.Receiver [Thread-0] Принят объект: name.
+2023-06-15 01:41:31,101 INFO r.ResponseBuilder [Thread-0] Создан ответ.
+2023-06-15 01:41:31,102 INFO r.ResponseBuilder [Thread-0] Создан ответ.
+2023-06-15 01:42:54,108 INFO Server [main] Запуск сервера.
+2023-06-15 01:42:54,447 INFO c.Receiver [main] Receiver инициализорован.
+2023-06-15 01:42:54,462 INFO c.Invoker [main] Invoker инициализирован.
+2023-06-15 01:42:54,462 INFO Server [main] Invoker и Receiver запущены.
+2023-06-15 01:42:57,652 INFO Server [Thread-0] Список команд отправлен.
+2023-06-15 01:43:08,870 INFO Server [Thread-0] Получена команда: login vedzevgn 18381838.
+2023-06-15 01:43:08,870 INFO c.Invoker [Thread-0] Проверка команды.
+2023-06-15 01:43:08,870 INFO c.Invoker [Thread-0] Запуск выполнения команды.
+2023-06-15 01:43:08,877 INFO r.ResponseBuilder [Thread-0] Создан ответ.
+2023-06-15 01:43:08,881 INFO r.ResponseBuilder [Thread-0] Создан ответ.
+2023-06-15 01:43:10,541 INFO Server [Thread-0] Получена команда: show.
+2023-06-15 01:43:10,541 INFO c.Invoker [Thread-0] Проверка команды.
+2023-06-15 01:43:10,542 INFO c.Invoker [Thread-0] Запуск выполнения команды.
+2023-06-15 01:43:10,559 INFO r.ResponseBuilder [Thread-0] Создан ответ.
+2023-06-15 01:43:15,502 INFO Server [Thread-0] Получена команда: update 7.
+2023-06-15 01:43:15,502 INFO c.Invoker [Thread-0] Проверка команды.
+2023-06-15 01:43:15,504 INFO c.Invoker [Thread-0] Запуск выполнения команды.
+2023-06-15 01:43:15,506 INFO r.ResponseBuilder [Thread-0] Создан ответ.
+2023-06-15 01:43:23,546 INFO c.Receiver [Thread-0] Принят объект: name.
+2023-06-15 01:43:23,555 INFO r.ResponseBuilder [Thread-0] Создан ответ.
+2023-06-15 01:43:25,075 INFO Server [Thread-0] Получена команда: show.
+2023-06-15 01:43:25,075 INFO c.Invoker [Thread-0] Проверка команды.
+2023-06-15 01:43:25,076 INFO c.Invoker [Thread-0] Запуск выполнения команды.
+2023-06-15 01:43:25,077 INFO r.ResponseBuilder [Thread-0] Создан ответ.
+2023-06-15 01:44:22,101 INFO Server [main] Запуск сервера.
+2023-06-15 01:44:22,537 INFO c.Receiver [main] Receiver инициализорован.
+2023-06-15 01:44:22,581 INFO c.Invoker [main] Invoker инициализирован.
+2023-06-15 01:44:22,581 INFO Server [main] Invoker и Receiver запущены.
+2023-06-15 01:44:31,997 INFO Server [Thread-0] Получена команда: update 7.
+2023-06-15 01:44:33,890 INFO c.Invoker [Thread-0] Проверка команды.
+2023-06-15 01:44:35,280 INFO c.Invoker [Thread-0] Запуск выполнения команды.
+2023-06-15 01:44:39,163 INFO r.ResponseBuilder [Thread-0] Создан ответ.
+2023-06-15 01:44:59,194 INFO c.Receiver [Thread-0] Принят объект: name.
+2023-06-15 01:45:36,016 INFO r.ResponseBuilder [Thread-0] Создан ответ.
+2023-06-15 01:46:03,745 INFO Server [main] Запуск сервера.
+2023-06-15 01:46:04,091 INFO c.Receiver [main] Receiver инициализорован.
+2023-06-15 01:46:04,104 INFO c.Invoker [main] Invoker инициализирован.
+2023-06-15 01:46:04,105 INFO Server [main] Invoker и Receiver запущены.
+2023-06-15 01:46:06,880 INFO Server [Thread-0] Список команд отправлен.
+2023-06-15 01:46:14,485 INFO Server [Thread-0] Получена команда: login vedzevgn 18381838.
+2023-06-15 01:46:14,485 INFO c.Invoker [Thread-0] Проверка команды.
+2023-06-15 01:46:14,485 INFO c.Invoker [Thread-0] Запуск выполнения команды.
+2023-06-15 01:46:14,489 INFO r.ResponseBuilder [Thread-0] Создан ответ.
+2023-06-15 01:46:14,493 INFO r.ResponseBuilder [Thread-0] Создан ответ.
+2023-06-15 01:46:17,695 INFO Server [Thread-0] Получена команда: show.
+2023-06-15 01:46:17,695 INFO c.Invoker [Thread-0] Проверка команды.
+2023-06-15 01:46:17,696 INFO c.Invoker [Thread-0] Запуск выполнения команды.
+2023-06-15 01:46:17,713 INFO r.ResponseBuilder [Thread-0] Создан ответ.
+2023-06-15 01:46:20,463 INFO Server [Thread-0] Получена команда: update 7.
+2023-06-15 01:46:20,463 INFO c.Invoker [Thread-0] Проверка команды.
+2023-06-15 01:46:20,464 INFO c.Invoker [Thread-0] Запуск выполнения команды.
+2023-06-15 01:46:20,466 INFO r.ResponseBuilder [Thread-0] Создан ответ.
+2023-06-15 01:47:30,511 INFO c.Receiver [Thread-0] Принят объект: name.
+2023-06-15 01:47:30,533 INFO r.ResponseBuilder [Thread-0] Создан ответ.
+2023-06-15 01:47:32,699 INFO Server [Thread-0] Получена команда: show.
+2023-06-15 01:47:32,700 INFO c.Invoker [Thread-0] Проверка команды.
+2023-06-15 01:47:32,702 INFO c.Invoker [Thread-0] Запуск выполнения команды.
+2023-06-15 01:47:32,704 INFO r.ResponseBuilder [Thread-0] Создан ответ.
+2023-06-15 01:53:07,917 INFO Server [Thread-0] Получена команда: show.
+2023-06-15 01:53:07,921 INFO c.Invoker [Thread-0] Проверка команды.
+2023-06-15 01:53:07,932 INFO c.Invoker [Thread-0] Запуск выполнения команды.
+2023-06-15 01:53:07,935 INFO r.ResponseBuilder [Thread-0] Создан ответ.

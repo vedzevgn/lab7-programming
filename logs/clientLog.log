@@ -1,112 +1,42 @@
-2023-06-13 13:52:42,069 INFO Client [main] Клиент запущен.
-2023-06-13 13:52:42,087 INFO r.RequestBuilder [main] Создан запрос: ready.
-2023-06-13 13:52:42,134 INFO Client [main] Список команд получен.
-2023-06-13 13:52:47,821 INFO r.RequestBuilder [main] Создан запрос: show.
-2023-06-13 13:52:47,841 INFO l.ConsoleManager [main] Получен ответ.
-2023-06-13 13:52:50,557 INFO r.RequestBuilder [main] Создан запрос: help.
-2023-06-13 13:52:50,562 INFO l.ConsoleManager [main] Получен ответ.
-2023-06-13 13:52:53,459 INFO r.RequestBuilder [main] Создан запрос: exit.
-2023-06-13 13:52:57,687 INFO Client [main] Клиент запущен.
-2023-06-13 13:52:57,693 INFO r.RequestBuilder [main] Создан запрос: ready.
-2023-06-13 13:52:57,721 INFO Client [main] Список команд получен.
-2023-06-13 13:54:10,034 INFO Client [main] Клиент запущен.
-2023-06-13 13:54:10,040 INFO r.RequestBuilder [main] Создан запрос: ready.
-2023-06-13 13:54:10,067 INFO Client [main] Список команд получен.
-2023-06-13 13:54:15,283 INFO Client [main] Клиент запущен.
-2023-06-13 13:54:15,288 INFO r.RequestBuilder [main] Создан запрос: ready.
-2023-06-13 13:54:15,313 INFO Client [main] Список команд получен.
-2023-06-13 13:54:23,074 INFO r.RequestBuilder [main] Создан запрос: login null null.
-2023-06-13 13:54:23,081 INFO l.ConsoleManager [main] Получен ответ.
-2023-06-13 13:55:41,649 INFO Client [main] Клиент запущен.
-2023-06-13 13:55:41,655 INFO r.RequestBuilder [main] Создан запрос: ready.
-2023-06-13 13:55:41,695 INFO Client [main] Список команд получен.
-2023-06-13 13:55:48,042 INFO r.RequestBuilder [main] Создан запрос: login null null.
-2023-06-13 13:55:48,060 INFO l.ConsoleManager [main] Получен ответ.
-2023-06-13 14:29:50,992 INFO Client [main] Клиент запущен.
-2023-06-13 14:29:50,998 INFO r.RequestBuilder [main] Создан запрос: ready.
-2023-06-13 14:30:01,024 ERROR Client [main] Cписок команд не получен.
-2023-06-13 14:30:03,642 INFO Client [main] Клиент запущен.
-2023-06-13 14:30:03,649 INFO r.RequestBuilder [main] Создан запрос: ready.
-2023-06-13 14:30:33,676 INFO Client [main] Клиент запущен.
-2023-06-13 14:30:33,684 INFO r.RequestBuilder [main] Создан запрос: ready.
-2023-06-13 14:30:43,708 ERROR Client [main] Cписок команд не получен.
-2023-06-13 14:31:03,693 INFO Client [main] Клиент запущен.
-2023-06-13 14:31:03,701 INFO r.RequestBuilder [main] Создан запрос: ready.
-2023-06-13 14:31:03,751 INFO Client [main] Список команд получен.
-2023-06-13 14:31:34,365 INFO r.RequestBuilder [main] Создан запрос: login vedzevgn 18381838.
-2023-06-13 14:31:34,393 INFO l.ConsoleManager [main] Получен ответ.
-2023-06-13 14:31:38,440 INFO r.RequestBuilder [main] Создан запрос: remove_by_id 1.
-2023-06-13 14:31:38,448 INFO l.ConsoleManager [main] Получен ответ.
-2023-06-13 14:31:39,884 INFO r.RequestBuilder [main] Создан запрос: y.
-2023-06-13 14:31:39,888 INFO l.ConsoleManager [main] Получен ответ.
-2023-06-13 14:34:03,536 INFO r.RequestBuilder [main] Создан запрос: remove_by_id 1.
-2023-06-13 14:34:03,582 INFO l.ConsoleManager [main] Получен ответ.
-2023-06-13 14:34:04,618 INFO r.RequestBuilder [main] Создан запрос: y.
-2023-06-13 14:34:04,627 INFO l.ConsoleManager [main] Получен ответ.
-2023-06-13 14:34:46,201 INFO r.RequestBuilder [main] Создан запрос: remove_by_id 1.
-2023-06-13 14:34:50,009 INFO l.ConsoleManager [main] Получен ответ.
-2023-06-13 14:34:53,227 INFO r.RequestBuilder [main] Создан запрос: y.
-2023-06-13 14:34:59,947 INFO l.ConsoleManager [main] Получен ответ.
-2023-06-13 14:38:57,844 INFO r.RequestBuilder [main] Создан запрос: remove_by_id 1.
-2023-06-13 14:39:07,851 INFO l.ConsoleManager [main] Получен ответ.
-2023-06-13 14:39:17,326 INFO Client [main] Клиент запущен.
-2023-06-13 14:39:17,340 INFO r.RequestBuilder [main] Создан запрос: ready.
-2023-06-13 14:39:17,450 INFO Client [main] Список команд получен.
-2023-06-13 14:39:26,656 INFO r.RequestBuilder [main] Создан запрос: login vedzevgn 18381838.
-2023-06-13 14:39:28,880 INFO l.ConsoleManager [main] Получен ответ.
-2023-06-13 14:39:35,363 INFO r.RequestBuilder [main] Создан запрос: remove_by_id 1.
-2023-06-13 14:39:45,364 INFO l.ConsoleManager [main] Получен ответ.
-2023-06-13 14:40:09,286 INFO Client [main] Клиент запущен.
-2023-06-13 14:40:09,302 INFO r.RequestBuilder [main] Создан запрос: ready.
-2023-06-13 14:40:09,382 INFO Client [main] Список команд получен.
-2023-06-13 14:40:17,247 INFO Client [main] Клиент запущен.
-2023-06-13 14:40:17,299 INFO r.RequestBuilder [main] Создан запрос: ready.
-2023-06-13 14:40:27,367 ERROR Client [main] Cписок команд не получен.
-2023-06-13 14:54:29,042 INFO Client [main] Клиент запущен.
-2023-06-13 14:54:29,058 INFO r.RequestBuilder [main] Создан запрос: ready.
-2023-06-13 14:54:29,124 INFO Client [main] Список команд получен.
-2023-06-13 14:54:30,506 INFO r.RequestBuilder [main] Создан запрос: show.
-2023-06-13 14:54:30,523 INFO l.ConsoleManager [main] Получен ответ.
-2023-06-13 14:54:38,687 INFO r.RequestBuilder [main] Создан запрос: login vedzevgn 18381838.
-2023-06-13 14:54:38,696 INFO l.ConsoleManager [main] Получен ответ.
-2023-06-13 14:54:40,406 INFO r.RequestBuilder [main] Создан запрос: show.
-2023-06-13 14:54:40,425 INFO l.ConsoleManager [main] Получен ответ.
-2023-06-13 15:05:23,620 INFO Client [main] Клиент запущен.
-2023-06-13 15:05:23,629 INFO r.RequestBuilder [main] Создан запрос: ready.
-2023-06-13 15:05:23,680 INFO Client [main] Список команд получен.
-2023-06-13 15:05:29,315 INFO r.RequestBuilder [main] Создан запрос: show.
-2023-06-13 15:05:29,330 INFO l.ConsoleManager [main] Получен ответ.
-2023-06-13 15:05:33,878 INFO r.RequestBuilder [main] Создан запрос: help.
-2023-06-13 15:05:33,883 INFO l.ConsoleManager [main] Получен ответ.
-2023-06-13 15:05:42,541 INFO r.RequestBuilder [main] Создан запрос: login vedzevgn 18381838.
-2023-06-13 15:05:42,549 INFO l.ConsoleManager [main] Получен ответ.
-2023-06-13 15:08:03,711 INFO r.RequestBuilder [main] Создан запрос: show.
-2023-06-13 15:08:03,726 INFO l.ConsoleManager [main] Получен ответ.
-2023-06-13 15:19:45,743 INFO Client [main] Клиент запущен.
-2023-06-13 15:19:45,749 INFO r.RequestBuilder [main] Создан запрос: ready.
-2023-06-13 15:19:55,767 ERROR Client [main] Cписок команд не получен.
-2023-06-13 15:20:10,755 INFO Client [main] Клиент запущен.
-2023-06-13 15:20:10,762 INFO r.RequestBuilder [main] Создан запрос: ready.
-2023-06-13 15:20:10,802 INFO Client [main] Список команд получен.
-2023-06-13 15:37:30,585 INFO Client [main] Клиент запущен.
-2023-06-13 15:37:30,598 INFO r.RequestBuilder [main] Создан запрос: ready.
-2023-06-13 15:37:30,689 INFO Client [main] Список команд получен.
-2023-06-13 15:37:32,058 INFO r.RequestBuilder [main] Создан запрос: show.
-2023-06-13 15:37:42,060 INFO l.ConsoleManager [main] Получен ответ.
-2023-06-13 15:38:57,521 INFO Client [main] Клиент запущен.
-2023-06-13 15:38:57,536 INFO r.RequestBuilder [main] Создан запрос: ready.
-2023-06-13 15:39:07,578 ERROR Client [main] Cписок команд не получен.
-2023-06-13 15:51:03,295 INFO Client [main] Клиент запущен.
-2023-06-13 15:51:03,330 INFO r.RequestBuilder [main] Создан запрос: ready.
-2023-06-13 15:51:03,392 INFO Client [main] Список команд получен.
-2023-06-13 15:53:21,838 INFO r.RequestBuilder [main] Создан запрос: show.
-2023-06-13 15:53:21,926 INFO l.ConsoleManager [main] Получен ответ.
-2023-06-13 15:54:30,081 INFO Client [main] Клиент запущен.
-2023-06-13 15:54:30,088 INFO r.RequestBuilder [main] Создан запрос: ready.
-2023-06-13 15:54:30,134 INFO Client [main] Список команд получен.
-2023-06-13 15:54:31,620 INFO r.RequestBuilder [main] Создан запрос: show.
-2023-06-13 15:54:31,634 INFO l.ConsoleManager [main] Получен ответ.
-2023-06-13 15:55:20,086 INFO r.RequestBuilder [main] Создан запрос: show.
-2023-06-13 15:55:20,116 INFO l.ConsoleManager [main] Получен ответ.
-2023-06-13 15:55:30,891 INFO r.RequestBuilder [main] Создан запрос: login vedzevgn 18381838.
-2023-06-13 15:55:30,903 INFO l.ConsoleManager [main] Получен ответ.
+2023-06-15 01:28:19,540 INFO Client [main] Клиент запущен.
+2023-06-15 01:28:19,556 INFO r.RequestBuilder [main] Создан запрос: ready.
+2023-06-15 01:28:29,581 ERROR Client [main] Cписок команд не получен.
+2023-06-15 01:41:02,340 INFO Client [main] Клиент запущен.
+2023-06-15 01:41:02,347 INFO r.RequestBuilder [main] Создан запрос: ready.
+2023-06-15 01:41:02,401 INFO Client [main] Список команд получен.
+2023-06-15 01:41:05,277 INFO r.RequestBuilder [main] Создан запрос: show.
+2023-06-15 01:41:05,297 INFO l.ConsoleManager [main] Получен ответ.
+2023-06-15 01:41:13,471 INFO r.RequestBuilder [main] Создан запрос: login vedzevgn 18381838.
+2023-06-15 01:41:13,481 INFO l.ConsoleManager [main] Получен ответ.
+2023-06-15 01:41:16,568 INFO r.RequestBuilder [main] Создан запрос: show.
+2023-06-15 01:41:16,586 INFO l.ConsoleManager [main] Получен ответ.
+2023-06-15 01:41:22,531 INFO r.RequestBuilder [main] Создан запрос: update 7.
+2023-06-15 01:41:31,044 INFO r.RequestBuilder [main] Создан запрос: update 7.
+2023-06-15 01:41:33,173 INFO r.RequestBuilder [main] Создан запрос: show.
+2023-06-15 01:41:33,174 INFO l.ConsoleManager [main] Получен ответ.
+2023-06-15 01:42:57,587 INFO Client [main] Клиент запущен.
+2023-06-15 01:42:57,602 INFO r.RequestBuilder [main] Создан запрос: ready.
+2023-06-15 01:42:57,660 INFO Client [main] Список команд получен.
+2023-06-15 01:43:08,868 INFO r.RequestBuilder [main] Создан запрос: login vedzevgn 18381838.
+2023-06-15 01:43:08,883 INFO l.ConsoleManager [main] Получен ответ.
+2023-06-15 01:43:10,539 INFO r.RequestBuilder [main] Создан запрос: show.
+2023-06-15 01:43:10,560 INFO l.ConsoleManager [main] Получен ответ.
+2023-06-15 01:43:15,501 INFO r.RequestBuilder [main] Создан запрос: update 7.
+2023-06-15 01:43:23,537 INFO r.RequestBuilder [main] Создан запрос: update 7.
+2023-06-15 01:43:25,074 INFO r.RequestBuilder [main] Создан запрос: show.
+2023-06-15 01:43:25,079 INFO l.ConsoleManager [main] Получен ответ.
+2023-06-15 01:44:31,967 INFO r.RequestBuilder [main] Создан запрос: update 7.
+2023-06-15 01:44:52,328 INFO r.RequestBuilder [main] Создан запрос: update 7.
+2023-06-15 01:46:06,840 INFO Client [main] Клиент запущен.
+2023-06-15 01:46:06,846 INFO r.RequestBuilder [main] Создан запрос: ready.
+2023-06-15 01:46:06,885 INFO Client [main] Список команд получен.
+2023-06-15 01:46:14,483 INFO r.RequestBuilder [main] Создан запрос: login vedzevgn 18381838.
+2023-06-15 01:46:14,494 INFO l.ConsoleManager [main] Получен ответ.
+2023-06-15 01:46:17,694 INFO r.RequestBuilder [main] Создан запрос: show.
+2023-06-15 01:46:17,715 INFO l.ConsoleManager [main] Получен ответ.
+2023-06-15 01:46:20,461 INFO r.RequestBuilder [main] Создан запрос: update 7.
+2023-06-15 01:47:30,451 INFO r.RequestBuilder [main] Создан запрос: update 7.
+2023-06-15 01:47:32,698 INFO r.RequestBuilder [main] Создан запрос: show.
+2023-06-15 01:47:32,706 INFO l.ConsoleManager [main] Получен ответ.
+2023-06-15 01:53:07,907 INFO r.RequestBuilder [main] Создан запрос: show.
+2023-06-15 01:53:07,940 INFO l.ConsoleManager [main] Получен ответ.
